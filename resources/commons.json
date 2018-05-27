@@ -1,0 +1,19 @@
+{
+    "url":"https://www.purgomalum.com/service/",
+    "method":"json?",
+    "TC1_parameters":"text=this is an example shit",
+    "TC2_parameters":"text=this is an example addedWord&add=addedWord",
+    "TC3_parameters":"text=this is an example addedWord&add=addedWord&fill_text=[REPLACED]",
+    "TC4_parameters":"text=this is an example addedWord&add=addedWord&fill_char=|",
+    "TC5_parameters":"text=this is an example shit&fill_text=[REPLACED]",
+    "TC6_parameters":"text=this is an example shit&fill_char=~",
+    "TC7_parameters":"text=this is an example $hit",
+    "TC8_parameters":"text=this is an example class",
+    "TC9_parameters":"text=this is an example word1&add=word1,word2,word3,word4,word5,word6,word7,word8,word9,word10,word11",
+    "TC10_parameters":"text=this is an example word&add=justsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextjustsometextj",
+    "TC11_parameters":"json?text=this is an example shit&fill_text=[longtextlongtextlongtextlongtext]",
+    "TC12_parameters":"json?text=this is an example shit&fill_text=;some_text;",
+    "TC13_parameters":"json?text=this is an example shit&fill_char=;",
+    "TC14_parameters":"text=this is an example shit&add=word1,word2,word3,word4,word5,word6,word7,word8,word9,word10,word11&fill_text=[longtextlongtextlongtextlongtextlongtext]",
+    "TC15_parameters":"text=this is an example @$$ class cl@$$"    
+}
