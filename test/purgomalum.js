@@ -5,7 +5,7 @@ chai.use(chaiHttp);
 require('mocha');
 var commons = require('../resources/commons.json');
 
-xdescribe('TC1', () => {
+describe('TC1', () => {
   it('Should replace content of profanity.', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC1_parameters)
@@ -18,7 +18,7 @@ xdescribe('TC1', () => {
   });
 });
 
-xdescribe('TC2', () => {
+describe('TC2', () => {
   it('Should replace content of profanity and add a new word.', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC2_parameters)
@@ -31,7 +31,7 @@ xdescribe('TC2', () => {
   });
 });
 
-xdescribe('TC3', () => {
+describe('TC3', () => {
   it('Should replace content of profanity, add a new word and replace with new text.', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC3_parameters)
@@ -44,7 +44,7 @@ xdescribe('TC3', () => {
   });
 });
 
-xdescribe('TC4', () => {
+describe('TC4', () => {
   it('Should replace content of profanity, add a new word and replace the word with chars.', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC4_parameters)
@@ -57,7 +57,7 @@ xdescribe('TC4', () => {
   });
 });
 
-xdescribe('TC5', () => {
+describe('TC5', () => {
   it('Should replace content of profanity and replace it with text.', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC5_parameters)
@@ -70,7 +70,7 @@ xdescribe('TC5', () => {
   });
 });
 
-xdescribe('TC6', () => {
+describe('TC6', () => {
   it('Should replace content of profanity and replace it with char: "~" ', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC6_parameters)
@@ -83,7 +83,7 @@ xdescribe('TC6', () => {
   });
 });
 
-xdescribe('TC7', () => {
+describe('TC7', () => {
   it('Should replace content of profanity even when it has character alternate.', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC7_parameters)
@@ -96,7 +96,7 @@ xdescribe('TC7', () => {
   });
 });
 
-xdescribe('TC8', () => {
+describe('TC8', () => {
   it('Should not replace content of profanity when it is a safeword.', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC8_parameters)
@@ -109,7 +109,7 @@ xdescribe('TC8', () => {
   });
 });
 
-xdescribe('TC9', () => {
+describe('TC9', () => {
   it('Should not replace content of profanity when add parameters contains more than 10 words.', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC9_parameters)
@@ -122,7 +122,7 @@ xdescribe('TC9', () => {
   });
 });
 
-xdescribe('TC10', () => {
+describe('TC10', () => {
   it('Should not replace content of profanity when add parameters exceeds 200 chars. ', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC10_parameters)
@@ -135,7 +135,7 @@ xdescribe('TC10', () => {
   });
 });
 
-xdescribe('TC11', () => {
+describe('TC11', () => {
   it('Should not replace content of profanity when fill_text exceeds 20 characters', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC11_parameters)
@@ -148,7 +148,7 @@ xdescribe('TC11', () => {
   });
 });
 
-xdescribe('TC12', () => {
+describe('TC12', () => {
   it('Should not replace content of profanity when fill_text contains unexpected characters like ";"', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC12_parameters)
@@ -161,7 +161,7 @@ xdescribe('TC12', () => {
   });
 });
 
-xdescribe('TC13', () => {
+describe('TC13', () => {
   it('Should not replace content of profanity when fill_char contains unexpected characters like ";"', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC13_parameters)
@@ -174,7 +174,7 @@ xdescribe('TC13', () => {
   });
 });
 
-xdescribe('TC14', () => {
+describe('TC14', () => {
   it('Should not replace content of profanity when add parameter exceeds 10 words and fill_text exceeds 20 characters.', (done) => {
     chai.request(commons.url + commons.method)
       .get(commons.TC14_parameters)
